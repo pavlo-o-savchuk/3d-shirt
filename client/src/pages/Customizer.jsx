@@ -45,7 +45,6 @@ const Customizer = () => {
 
     const handleSubmit = async (type) => {
         if (!prompt) return alert('Please enter a prompt')
-
         try {
             setGeneratingImg(true)
             const response = await fetch(config.production.backendUrl, {
